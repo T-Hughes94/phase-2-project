@@ -1,0 +1,52 @@
+{
+  "projections": [
+    {
+      "id": 1,
+      "labor": "500",
+      "foodcost": "5000",
+      "payment": "10000",
+      "date": "2020-01-01",
+      "venue": "Red-Rocks",
+      "profit": "4500"
+    },
+    {
+      "id": 2
+    },
+    {
+      "labor": "500",
+      "foodcost": "1000",
+      "payment": "5000",
+      "date": "2023-09-20",
+      "venue": "Denver Convention Center",
+      "profit": "3500",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "labor": "400",
+      "foodcost": "600",
+      "payment": "2000",
+      "date": "2023-09-27",
+      "venue": "Fiddlers Green",
+      "profit": "1000",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "labor": "400",
+      "foodcost": "600",
+      "payment": "2000",
+      "date": "2023-09-27",
+      "venue": "Fiddlers Green",
+      "profit": "1000",
+      "id": 8
+    }
+  ]
+}
