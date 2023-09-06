@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+// import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom'
 
 function AddProjectionsForm({addProjection}) {
   function submitForm(e){
     e.preventDefault()
-    addProjection(e.target.value)
+    // addProjection(e.target.value)
     const newProjection = {
         labor: e.target.labor.value,
         foodcost: e.target.foodcost.value,
@@ -26,7 +27,7 @@ function AddProjectionsForm({addProjection}) {
           <input type="number" name="profit" placeholder="Profit" step="0.01" />
           
         </div>
-        <button className="ui button" type="submit">
+        <button  className="ui button" type="submit">
           Calculate
         </button>
       </form>

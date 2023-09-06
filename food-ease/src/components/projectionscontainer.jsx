@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react'
 import ProjectionsList from './projectionslist'
 import Search from './search'
 import AddProjectionsForm from './addprojectionsform'
+import About from './about'
 
 const API = 'http://localhost:3000/projections'
-
 function ProjectionsContainer() {
     const [projections, setProjections] = useState([])
     const [currentSearch, setCurrentSearch] = useState('')
@@ -34,13 +34,20 @@ function ProjectionsContainer() {
         
         
         return (
+            <>
             <div>
-            <Search setCurrentSearch={setCurrentSearch}/>
-            <AddProjectionsForm addProjection={addProjection} />                                      
-            <ProjectionsList projections={filteredProjections} />
+                <Search setCurrentSearch={setCurrentSearch}/>
+                <AddProjectionsForm addProjection={addProjection} />                                      
+                <ProjectionsList projections={filteredProjections} />
+                {/* <About /> */}
             </div>
-          )
+             </>
+           )
+          
         }
 
 
 export default ProjectionsContainer
+
+
+

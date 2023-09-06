@@ -5,7 +5,7 @@ function Search({setCurrentSearch}) {
     <div className="ui large fluid icon input">
       <input
         type="text"
-        placeholder="Search your Recent Projections"
+        placeholder="Search Projections"
         onChange={(e) => setCurrentSearch(e.target.value)}
       />
       <i className="circular search link icon"></i>

@@ -1,11 +1,33 @@
-#Header-title{
+
+/* css for header */
+header {
   background-color: orange;
-  text-decoration-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
+  height: 5vh;
 }
+nav{
+  margin-left: 1vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 10vw;
+}
+header div{
+  width: 10vw;
+}
+
 h3{
   background-color: orange;
   text-decoration-color: orange;
   color: white;
  
+}
+.ui-celled-striped-padded-table{
+  
+  background-color: orange;
+  text-decoration-color: orange;
 }
