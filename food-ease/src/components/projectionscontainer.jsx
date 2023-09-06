@@ -5,8 +5,8 @@ import AddProjectionsForm from './addprojectionsform'
 import About from './about'
 
 const API = 'http://localhost:3000/projections'
-function ProjectionsContainer() {
-    const [projections, setProjections] = useState([])
+function ProjectionsContainer({projections,setProjections,addProjection}) {
+    // const [projections, setProjections] = useState([])
     const [currentSearch, setCurrentSearch] = useState('')
     
     useEffect(()=>{
@@ -15,31 +15,35 @@ function ProjectionsContainer() {
           .then((data) => setProjections(data))
         },[])
          
-    function addProjection(newProjection) {
-        fetch(API, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newProjection)
-        })
-      .then(res => res.json())
-      .then((data) => setProjections([...projections, data]))
-      setProjections([...projections, newProjection])
-    }
         const filteredProjections = projections.filter((projection)=>{
             return projection.profit && projection.profit.toLowerCase().includes(currentSearch.toLowerCase())
         })
         
+        function deleteProjection(id) {
+            fetch(`${API}/${id}`,)
+            .then(res => res.json())
+            .then(data =>{
+                const newProjections = projections.filter((projection) => {
+
+                    if(id === projection.id) {
+                        return false
+                    }
+                    return true
+                })
+               
+                setProjections(newProjections)
+            })
+            }
         
         
         return (
             <>
             <div>
                 <Search setCurrentSearch={setCurrentSearch}/>
-                <AddProjectionsForm addProjection={addProjection} />                                      
+                {/* <AddProjectionsForm addProjection={addProjection} />                                       */}
                 <ProjectionsList projections={filteredProjections} />
                 {/* <About /> */}
+                {}
             </div>
              </>
            )

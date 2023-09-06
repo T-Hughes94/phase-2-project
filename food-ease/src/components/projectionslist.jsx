@@ -7,7 +7,8 @@ function ProjectionsList({ projections }) {
   });
 
   return (
-    <table className="ui celled striped padded table">
+    <div id="table-container">
+    <table className="data-table">
       <tbody>
         <tr>
           <th>
@@ -32,6 +33,7 @@ function ProjectionsList({ projections }) {
         {projectionsList}
       </tbody>
     </table>
+    </div>
   );
 }
 

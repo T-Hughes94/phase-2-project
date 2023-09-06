@@ -7,9 +7,21 @@ import AddProjectionsForm from './components/addprojectionsform'
 // import ProjectionsList from './components/projectionslist'
 import About from './components/about'
 
-
+const API = 'http://localhost:3000/projections'
 function App() {
-    
+  const [projections, setProjections] = useState([])      
+  function addProjection(newProjection) {
+    fetch(API, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newProjection)
+    })
+    .then(res => res.json())
+    .then((data) => setProjections([...projections, data]))
+    setProjections([...projections, newProjection])
+}
     
     return (
     <>
@@ -17,8 +29,8 @@ function App() {
      <main>
       <Header />
       <Routes>
-        <Route path="/" element={<AddProjectionsForm />} />
-        <Route path="chart" element={<ProjectionsContainer />} />
+        <Route path="/" element={<AddProjectionsForm addProjection={addProjection} />} />
+        <Route path="chart" element={<ProjectionsContainer projections ={projections} setProjections={setProjections} addProjection={addProjection}/>} />
         <Route path="about" element={<About />} />
       </Routes>
      </main>

@@ -3,7 +3,7 @@ import React from 'react'
 function Projection({projection}) {
     const {labor, foodcost, payment, date, venue, profit} = projection
     return (
-   <tr>
+   <tr className="table-row">
         <td>{date}</td>
         <td>{labor}</td>
         <td>{foodcost}</td>

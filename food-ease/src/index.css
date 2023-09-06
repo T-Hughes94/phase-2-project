@@ -31,3 +31,48 @@ h3{
   background-color: orange;
   text-decoration-color: orange;
 }
+.form-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:80vh;
+}
+#formz{
+  height:48vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 33px;
+ border-width: 4px;
+ border-style: solid;
+ border-color:orange;
+ border-radius: 10px;
+ 
+}
+.formz-class{
+  margin:20px;
+  padding:10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: orange;
+  color:black;
+}
+.data-table{
+  margin:20px;
+  padding:10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: orange;
+  color:black;
+  justify-content: center;
+}
+.table-row{
+  justify-content: center;
+  margin:5px;
+  border-style:solid;
+  border-radius: 10px;
+}
+#table-container{
+margin: 10vh 20vw;
+}
