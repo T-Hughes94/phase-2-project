@@ -22,15 +22,15 @@ function AddProjectionsForm({addProjection}) {
     <div className="form-div">
       <form id = "formz" onSubmit={(e)=>submitForm(e)} className="ui form">
         
-          <input class="formz-class" type="number" name="labor" placeholder="Labor" />
-          <input class="formz-class" type="number" name="foodcost" placeholder="Food-Cost" />
-          <input class="formz-class" type="number" name="payment" placeholder="Payment" />
-          <input class="formz-class" type="date" name="date" />
-          <input class="formz-class" type="text" name="venue" placeholder="Venue" step="0.01" />
-          <input class="formz-class" type="number" name="profit" placeholder="Profit" step="0.01" />
+          <input className="formz-class" type="number" name="labor" placeholder="Labor" />
+          <input className="formz-class" type="number" name="foodcost" placeholder="Food-Cost" />
+          <input className="formz-class" type="number" name="payment" placeholder="Payment" />
+          <input className="formz-class" type="date" name="date" />
+          <input className="formz-class" type="text" name="venue" placeholder="Venue" step="0.01" />
+          <input className="formz-class" type="number" name="profit" placeholder="Profit" step="0.01" />
           
         
-        <button  className="ui button" type="submit">
+        <button  className="ui-button" type="submit">
           Calculate
         </button>
       </form>

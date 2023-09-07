@@ -2,7 +2,7 @@ import React from 'react'
 
 function Search({setCurrentSearch}) {
   return (
-    <div className="ui large fluid icon input">
+    <div className="search-bar">
       <input
         type="text"
         placeholder="Search Projections"

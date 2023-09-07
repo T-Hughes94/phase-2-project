@@ -9,7 +9,7 @@ function ProjectionsList({ projections }) {
   return (
     <div id="table-container">
     <table className="data-table">
-      <tbody>
+      <tbody key={'hello'}>
         <tr>
           <th>
             <h3 className="ui center aligned header">Date</h3>
