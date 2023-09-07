@@ -16,7 +16,8 @@ function ProjectionsContainer({projections,setProjections,addProjection}) {
         },[])
          
         const filteredProjections = projections.filter((projection)=>{
-            return projection.profit && projection.profit.toLowerCase().includes(currentSearch.toLowerCase())
+            console.log(projection)
+            return projection.profit && projection.venue.toLowerCase().includes(currentSearch.toLowerCase())
         })
         
         function deleteProjection(id) {

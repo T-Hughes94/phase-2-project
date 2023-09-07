@@ -6,6 +6,7 @@ import './App.css'
 import AddProjectionsForm from './components/addprojectionsform'
 // import ProjectionsList from './components/projectionslist'
 import About from './components/about'
+import Footer from './components/footer'
 
 const API = 'http://localhost:3000/projections'
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="chart" element={<ProjectionsContainer projections ={projections} setProjections={setProjections} addProjection={addProjection}/>} />
         <Route path="about" element={<About />} />
       </Routes>
+      <Footer />
      </main>
     </BrowserRouter>
      

@@ -7,8 +7,8 @@ function ProjectionsList({ projections }) {
   });
 
   return (
-    <div id="table-container">
-    <table className="data-table">
+    <div id="table-div">
+    <table className="table-container">
       <tbody key={'hello'}>
         <tr>
           <th>
@@ -18,7 +18,7 @@ function ProjectionsList({ projections }) {
             <h3 className="ui center aligned header">Labor</h3>
           </th>
           <th>
-            <h3 className="ui center aligned header">Food Cost</h3>
+            <h3 className="ui center aligned header">Cost</h3>
           </th>
           <th>
             <h3 className="ui center aligned header">Payment</h3>

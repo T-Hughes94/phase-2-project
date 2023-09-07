@@ -7,11 +7,14 @@ header {
   align-items: center;
   color: white;
   height: 5vh;
+  border: solid;
+  border-radius: 5px;
 }
+
 nav{
   margin-left: 1vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   width: 10vw;
@@ -19,15 +22,29 @@ nav{
 header div{
   width: 10vw;
 }
-
+#logo-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 11vw;
+  font-size: 1rem;
+}
+#logo-div a{
+  font-size: 2rem;
+}
 h3{
-  background-color: orange;
-  text-decoration-color: orange;
-  color: white;
- 
+  display: flex;
+  /* justify-content:; */
+  padding:15px;
+  margin:5px;
+  font-size: 20px;
+  font-weight: bold;
+  color:orange;
+  border-radius: 5px;
+  background-color: white
+  
 }
 .ui-celled-striped-padded-table{
-  
   background-color: orange;
   text-decoration-color: orange;
 }
@@ -36,6 +53,8 @@ h3{
   justify-content: center;
   align-items: center;
   height:80vh;
+  margin-bottom: 2.3vh;
+
 }
 #formz{
   height:49vh;
@@ -44,10 +63,10 @@ h3{
   justify-content: center;
   flex-direction: column;
   padding: 33px;
- border-width: 4px;
- border-style: solid;
- border-color:orange;
- border-radius: 10px;
+  border-width: 4px;
+   border-style: solid;
+   border-color:orange;
+   border-radius: 10px;
  
 }
 .formz-class{
@@ -58,26 +77,31 @@ h3{
   border-color: orange;
   color:black;
 }
-.data-table{
-  margin:20px;
-  padding:10px;
-  border-style: solid;
-  border-radius: 10px;
-  border-color:white;
-  color:black;
-  justify-content: center;
-  background-color: orange;
-  color:white;
+
+#table-div{
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.table-row{
-  justify-content: center;
-  margin:5px;
+.table-container{
+  display: flex;
+  width:40vw;
+  height:40vh;
+  justify-content: space-around;
   border-style:solid;
   border-radius: 10px;
+  border-color: orange;
+  background-color:orange;
+  color:white;
+  margin-bottom: 30vh;
+  
 }
-#table-container{
-margin: 10vh 20vw;
-color:orange;
+.table-row{
+  background-color: white;
+  border:solid;
+  border-radius:10px ;
+  border-color:orange;
+  color:black;
 }
 .search-bar{
   display: flex;
@@ -86,6 +110,7 @@ color:orange;
   height: 10vh;
   margin: 5px;
   padding: 5px;
+  ;
 }
 .ui-button{
   margin-bottom:18.5px;
@@ -95,9 +120,42 @@ color:orange;
   border-radius: 10px;
   border-color: white;
 }
-.about-header{
-  
+#about-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7.4vh;
 }
+.about-header{
+  background-color: orange;
+  color:white;
+  width:10vw;
+  text-align: center;
+  border:solid;
+  border-radius: 10px;
+  border-color: orange;
+ 
+ }
 .about-text{
-
+  justify-content: center;
+  background-color: orange;
+  height:60vh;
+  width:20vw;
+  text-align: center;
+  font-size:x-large;
+  border: solid;
+  border-radius: 10px;
+  color:white;
+}
+#footer{
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: orange;
+  height: 5vh;
+  border: solid;
+  border-radius: 5px;
+ 
 }

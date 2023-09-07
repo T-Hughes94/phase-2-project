@@ -11,9 +11,12 @@ function Header() {
     <NavLink id="about-link" to='/about'>About</NavLink>
     <NavLink id='chart-link' to='/chart'>Chart</NavLink>
   </nav>
-      <h1 id='Header-title'>
-          FoodEase 🔪
-      </h1>
+      <div id='logo-div'>
+        <h1 id='Header-title'>
+            FoodEase
+        </h1>
+        <a href='/'>🔪</a>
+      </div>
  <div></div>
     
 </header>
