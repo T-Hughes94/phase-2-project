@@ -12,16 +12,25 @@ const API = 'http://localhost:3000/projections'
 function App() {
   const [projections, setProjections] = useState([])      
   function addProjection(newProjection) {
+    console.log(newProjection)
+    const projection = {
+      "labor": newProjection.labor,
+      "foodcost": newProjection.foodcost,
+      "payment": newProjection.payment,
+      "date":  newProjection.date,
+      "venue": newProjection.venue,
+      "profit": newProjection.payment - newProjection.labor - newProjection.foodcost
+    }
     fetch(API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(newProjection)
+      body: JSON.stringify(projection)
     })
     .then(res => res.json())
     .then((data) => setProjections([...projections, data]))
-    setProjections([...projections, newProjection])
+    //setProjections([...projections, newProjection])
 }
     
     return (

@@ -17,7 +17,7 @@ function ProjectionsContainer({projections,setProjections,addProjection}) {
         },[])
          //this function is used to filter the list of projections based on the current search term
         const filteredProjections = projections.filter((projection)=>{
-            console.log(projection)
+            // console.log(projection)
             return projection.profit && projection.venue.toLowerCase().includes(currentSearch.toLowerCase())
         })
         //this function is used for the delete buttons

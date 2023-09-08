@@ -20,7 +20,9 @@ function AddProjectionsForm({addProjection}) {
      addProjection(newProjection)
      //our router will redirect to the chart page
      navigate("/chart")
+     console.log(newProjection.labor)
     }
+    
     
     return(
     //here is where we store the inputs for the form
