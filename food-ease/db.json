@@ -107,6 +107,24 @@
       "venue": "",
       "profit": "",
       "id": 14
+    },
+    {
+      "labor": "500",
+      "foodcost": "500",
+      "payment": "2000",
+      "date": "2023-09-24",
+      "venue": "Denver Convention Center",
+      "profit": "1000",
+      "id": 15
+    },
+    {
+      "labor": "500",
+      "foodcost": "500",
+      "payment": "3000",
+      "date": "2023-09-12",
+      "venue": "Chicken Coop",
+      "profit": "2000",
+      "id": 16
     }
   ]
 }

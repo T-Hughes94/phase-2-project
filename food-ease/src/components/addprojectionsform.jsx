@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 // import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom'
-
+//this is the form for adding a new projection
 function AddProjectionsForm({addProjection}) {
+  //by default, navigate to the home page
   const navigate = useNavigate()
   function submitForm(e){
     e.preventDefault()
@@ -15,10 +16,14 @@ function AddProjectionsForm({addProjection}) {
         venue: e.target.venue.value,
         profit: e.target.profit.value
      }
+     //this is where we add the new projection to the database
      addProjection(newProjection)
+     //our router will redirect to the chart page
      navigate("/chart")
     }
+    
     return(
+    //here is where we store the inputs for the form
     <div className="form-div">
       <form id = "formz" onSubmit={(e)=>submitForm(e)} className="ui form">
         
@@ -30,7 +35,7 @@ function AddProjectionsForm({addProjection}) {
           <input className="formz-class" type="number" name="profit" placeholder="Profit" step="0.01" />
           
         
-        <button  className="ui-button" type="submit">
+        <button onClick={()=>{}}  className="ui-button" type="submit">
           Calculate
         </button>
       </form>

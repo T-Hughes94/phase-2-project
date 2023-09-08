@@ -82,6 +82,8 @@ h3{
 display: flex;
 justify-content: center;
 align-items: center;
+
+background-image: url();
 }
 .table-container{
   display: flex;
@@ -110,7 +112,7 @@ align-items: center;
   height: 10vh;
   margin: 5px;
   padding: 5px;
-  ;
+  background-image:url() ;
 }
 .ui-button{
   margin-bottom:18.5px;
@@ -137,6 +139,13 @@ align-items: center;
   border-color: orange;
  
  }
+ .text-container{
+  display: flex;
+  margin-top: 55px;
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+}
 .about-text{
   justify-content: center;
   background-color: orange;
@@ -157,5 +166,6 @@ align-items: center;
   height: 5vh;
   border: solid;
   border-radius: 5px;
+  text-align: bottom;
  
 }
