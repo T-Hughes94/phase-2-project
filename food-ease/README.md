@@ -6,9 +6,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [Contributing](#contributing)
+- [Installation](#installation)
 - [License](#license)
 - [Contact](#contact)
 
