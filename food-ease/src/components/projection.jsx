@@ -6,7 +6,7 @@ function Projection({projection}) {
     return (
      //this table displays the columns of created data
    <tr className="table-row">
-        <td>{}</td>
+        <td>{date}</td>
         <td>{labor}</td>
         <td>{foodcost}</td>
         <td>{payment}</td>

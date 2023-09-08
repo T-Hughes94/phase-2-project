@@ -29,6 +29,8 @@ FoodEase's key features include:
 
 -An About Us section that explains the purpose of this application.
 
+-A search bar that allows you to filter your entries by venue.
+
 
 
 ## Getting Started
@@ -41,16 +43,22 @@ FoodEase's key features include:
 
 -check out the About Us for a quick rundown of our vision!
 
+-use the search bar to filter and display your venues by name!
+
 
 
 ### Installation/Setup
 ```bash
 
--gitclone 
+-gitclone git@github.com:T-Hughes94/phase-2-project.git.
 
-- Run `json-server --watch db.json` to get the backend started
+- Run `json-server --watch db.json` to get the backend started.
 
-- Open the `index.html` file on your browser
+- Open a new terminal and cd into food-ease again.
+
+-run npm dev to launch the server.
+
+-follow the link to view the page.
 
 
 ### Contact
